@@ -1,0 +1,27 @@
+EnvironmentConfigurationMetadata:
+  DateCreated: '1510510629000'
+  DateModified: '1510510629000'
+Platform:
+  PlatformArn: arn:aws:elasticbeanstalk:us-east-1::platform/Tomcat 8 with Java 8 running on 64bit Amazon Linux/2.6.5
+OptionSettings:
+  aws:elasticbeanstalk:sns:topics:
+    Notification Endpoint: ''
+  aws:elasticbeanstalk:environment:
+    ServiceRole: aws-elasticbeanstalk-service-role
+    EnvironmentType: SingleInstance
+  aws:elasticbeanstalk:healthreporting:system:
+    SystemType: enhanced
+    HealthCheckSuccessThreshold: Ok
+  aws:ec2:vpc:
+    Subnets: subnet-350d737d
+    VPCId: vpc-db68eba2
+    AssociatePublicIpAddress: true
+  aws:autoscaling:launchconfiguration:
+    SecurityGroups: sg-8fd856fe
+    IamInstanceProfile: aws-elasticbeanstalk-ec2-role
+    InstanceType: t1.micro
+    EC2KeyName: aws-eb
+EnvironmentTier:
+  Type: Standard
+  Name: WebServer
+AWSConfigurationTemplateVersion: 1.1.0.0

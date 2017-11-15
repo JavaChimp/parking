@@ -1,0 +1,10 @@
+.git/
+.project
+src/
+.settings/
+.classpath
+.gitignore
+docs/
+README.md
+RELEASE_NOTES
+.idea/
